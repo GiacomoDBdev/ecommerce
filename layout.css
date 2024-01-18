@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+
+    background-color: #121212;
+}
+
+header {
+    overflow: hidden;
+
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    color: orangered;
+    -webkit-text-shadow: 0px 0px 9px orangered;
+    text-shadow: 0px 0px 9px orangered;
+    transition: all 0.3s linear;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 30px auto;
+    border: solid 1px orangered;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.nav-list {
+    display: flex;
+
+}
+
+.nav-list li {
+    list-style: none;
+    align-items: center;
+    text-transform: uppercase;
+    padding-left: 30px;
+}
+
+.logo img {
+    display: flex;
+    max-height: 40px;
+    align-items: center;
+}
+
+.nav-list li a {
+    font-size: 18px;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.social-icons a i {
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+.social-icons a i:last-of-type{
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.social-icons a i:hover {
+    color: orangered;
+    cursor: pointer;
+    -webkit-text-shadow: 0px 0px 9px orangered;
+    text-shadow: 0px 0px 9px orangered;
+    transition: all 0.3s linear;
+}
+
+
+
+.toggel-bar {
+    display: none;
+    cursor: pointer;
+}
+
+.toggel-bar i {
+    font-size: 20px;
+}
+
+
+.main-box {
+    max-width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    height: 60vh;
+
+}
+
+.big-box {
+    width: 58%;
+    display: flex;
+    background-color: rgba(255, 68, 0, 0.274);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    background-image: url('img/big.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.small-box {
+    width: 40%;
+    display: flex;
+    background-color: rgba(255, 68, 0, 0.274);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/imgform.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.big-box h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: white;
+
+}
+
+.small-box h1 {
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.login {
+    padding: 5%;
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    border-radius: 10px;
+    height: auto;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.125);
+    -webkit-box-shadow: 5px 5px 15px 5px #FFFFFF;
+    box-shadow: 0px 0px 15px 2px #FFFFFF;
+}
+
+
+.login #username,
+#password {
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.login #username,
+#password:focus {
+    border: none;
+    outline: none;
+}
+
+.btn {
+    color: orangered;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.btn:hover {
+    background-color: orangered;
+    transition: all 0.3s linear;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+.main-box2 {
+    display: grid;
+    grid-template-columns: 28% 28% 40%;
+    gap: 25px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 20px auto;
+}
+
+.product1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 68, 0, 0.063);
+    border-radius: 10px;
+    background-image: url('img/iphone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+
+}
+
+.product1 p {
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+    color: white;
+    padding-bottom: 10px;
+
+}
+
+.product1 h2 {
+    color: white;
+    padding: 10px;
+}
+
+.product1 h2 span {
+    color: orangered;
+    -webkit-text-shadow: 0px 0px 5px orangered;
+    text-shadow: 0px 0px 5px orangered;
+}
+
+.product2 h2 {
+    color: white;
+    padding: 10px;
+}
+
+.product2 {
+    display: flex;
+    background-color: rgba(255, 68, 0, 0.063);
+    border-radius: 10px;
+    justify-content: flex-start;
+    background-image: url('img/macbook.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+.product2 p {
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+    color: white;
+
+}
+
+.product2 h2 span {
+    color: orangered;
+    -webkit-text-shadow: 0px 0px 9px orangered;
+    text-shadow: 0px 0px 9px orangered;
+}
+
+.work {
+    display: flex;
+    background-color: rgba(255, 68, 0, 0.782);
+    border-radius: 10px;
+    justify-content: flex-start;
+    padding: 10px;
+    color: white;
+}
+
+
+
+
+
+
+
+/*@media*/
+
+@media only screen and (min-width: 1001px) {
+    .nav-list {
+        display: flex !important;
+    }
+
+    .hide {
+        display: flex !important;
+    }
+
+    .toggel-bar {
+        display: none !important;
+    }
+}
+
+
+@media only screen and (max-width:1000px) {
+    .toggel-bar {
+        display: flex;
+        z-index: 1000;
+
+    }
+
+    .toggel-bar i {
+        font-size: 22px;
+
+    }
+
+    .close {
+        display: none;
+    }
+
+    .hide {
+        display: none;
+
+    }
+
+    .nav-bar {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #12121273;
+        width: 50%;
+        height: 100%;
+        z-index: 1000;
+        padding-top: 130px;
+        display: none;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+    }
+
+    .nav-list li {
+        margin-bottom: 15px;
+
+    }
+
+
+    .main-box {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .small-box {
+        display: none;
+
+    }
+
+    .big-box {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-box2 {
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 30px;
+    }
+
+    .work {
+        margin-right: 1%;
+    }
+
+    .main-box2 {
+        gap: 10px;
+        width: 100%;
+        max-width: 1440px;
+        margin-right: 1%;
+        margin-left: 1%;
+
+    }
+
+}
