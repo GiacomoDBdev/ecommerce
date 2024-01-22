@@ -230,7 +230,7 @@ label {
 .main-box2 {
     display: grid;
     grid-template-columns: 28% 28% 40%;
-    gap: 25px;
+    gap: 29px;
     width: 100%;
     max-width: 1440px;
     margin: 20px auto;
@@ -263,6 +263,7 @@ label {
 .product1 h2 {
     color: white;
     padding: 10px;
+    font-size: 28px;
 }
 
 .product1 h2 span {
@@ -274,6 +275,7 @@ label {
 .product2 h2 {
     color: white;
     padding: 10px;
+    font-size: 28px;
 }
 
 .product2 {
