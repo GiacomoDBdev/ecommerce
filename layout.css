@@ -477,7 +477,7 @@ label {
     
 }
 .social-icons{
-    padding-right: 30px;
+    padding-right: 40px;
 }
 .work{
     height:200px;
@@ -504,7 +504,13 @@ label {
 @media only screen and (max-width: 400px){
     .social-icons a i {
         font-size: 20px;
-        margin-top: 5px;
+        margin-top: 8px;
+    }
+    .toggel-bar i {
+        margin-top: 8px;
+    }
+    .social-icons {
+        margin-right: -15px;
     }
 }
 
