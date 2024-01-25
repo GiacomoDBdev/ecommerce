@@ -63,7 +63,7 @@ a:visited {
 
 .logo img {
     display: flex;
-    max-height: 40px;
+    width: 120px;
     align-items: center;
 }
 
@@ -71,6 +71,7 @@ a:visited {
     font-size: 18px;
     text-decoration: none;
     padding-left: 15px;
+    font-weight: 600;
 }
 
 .social-icons a i {
@@ -476,7 +477,7 @@ label {
     
 }
 .social-icons{
-    padding-right: 20px;
+    padding-right: 30px;
 }
 .work{
     height:200px;
@@ -502,5 +503,17 @@ label {
 
 }
 
+@media only screen and (max-width: 400px){
+    .social-icons a i {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    
+    .logo img{
+        width: 80px;
+    }
+}
 
 
